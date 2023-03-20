@@ -4,6 +4,7 @@ import './index.css'
 
 class ClickCounter extends Component {
   state = {count: 0}
+
   onIncrement = () => {
     this.setState(prevState => ({count: prevState.count + 1}))
   }
@@ -14,7 +15,7 @@ class ClickCounter extends Component {
       <div className="container">
         <h1>
           The Button has been clicked
-          <span className="count-text">{count}</span> times
+          <span className="count-text"> {count}</span> times
         </h1>
         <p>Click the button to increase the count</p>
         <button className="button" onClick={this.onIncrement}>
